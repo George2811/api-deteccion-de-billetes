@@ -1,0 +1,12 @@
+# Dependencias del proyecto
+pip install fastapi
+pip install "uvicorn[standard]"
+pip install sqlalchemy==1.4.0
+pip install pymysql
+pip install cryptography
+
+pip install tensorflow==2.12.0
+pip install opencv-python
+pip install python-multipart
+
+# Lo modelos entrenados (.h5) se colocan dentro de la carpeta /services
