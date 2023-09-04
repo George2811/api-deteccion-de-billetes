@@ -1,0 +1,6 @@
+devcount-env/
+__pycache__/
+
+*.env
+*.env.*
+env.*

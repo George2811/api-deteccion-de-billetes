@@ -22,4 +22,7 @@ def preprocessing_algorithm(image):
   # Aplicar el CLAHE a la imagen de escala de grises
   enhanced_image = clahe.apply(equalized_image)
 
-  return enhanced_image
+  # Regresa a formato RGB
+  rgb_image = cv2.cvtColor(enhanced_image, cv2.COLOR_GRAY2BGR)
+
+  return rgb_image

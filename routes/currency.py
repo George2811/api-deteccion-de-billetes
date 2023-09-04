@@ -14,4 +14,4 @@ def get_currencies():
 def save_currency(cur: Currency):
     new_currency = {'name': cur.name}
     result = conn.execute(currencies.insert().values(new_currency))
-    return "Se guadó"
+    return "Se guardó"

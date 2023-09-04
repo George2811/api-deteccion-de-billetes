@@ -28,6 +28,6 @@ app.include_router(currency)
 app.include_router(detection)
 app.include_router(prediction)
 
-# source banknotes-env/bin/activate
+# source devcount-env/bin/activate
 # uvicorn main:app --reload
 # deactivate
