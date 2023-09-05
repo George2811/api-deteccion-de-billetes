@@ -1,4 +1,4 @@
-devcount-env/
+dev-env/
 __pycache__/
 
 *.env
