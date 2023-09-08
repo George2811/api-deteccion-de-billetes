@@ -33,7 +33,7 @@ async def predict_soles_veracity(file: UploadFile = File(...)):
     
     result = {
         'prediction': predict,
-        'percetange': float(np.max(preds))
+        'percentage': float(np.max(preds))
     }
     return result
 
@@ -56,7 +56,7 @@ async def predict_dollars_veracity(file: UploadFile = File(...)):
     
     result = {
         'prediction': predict,
-        'percetange': float(np.max(preds))
+        'percentage': float(np.max(preds))
     }
     return result
 
