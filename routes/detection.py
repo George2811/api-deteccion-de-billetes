@@ -11,7 +11,7 @@ async def get_detection_by_id(id: int):
     return result
 
 @detection.get("/detections/user/{user_id}", tags=["Detection"])
-async def get_detections_by_user(user_id: int):
+async def get_detections_by_user(user_id: str):
     result = conn.execute(detections.select().where(detections.c.user_id == user_id)).fetchall()
     return result
 
@@ -29,7 +29,7 @@ async def save_detection(register: Detection):
     return result
 
 @detection.delete("/detections/user/{user_id}/{id}", tags=["Detection"])
-async def delete_detection(user_id: int, id:int):
+async def delete_detection(user_id: str, id:int):
     #Mejorar el delete detection
     remove = conn.execute(detections.delete().where(detections.c.user_id == user_id, detections.c.id == id))
     return f"Se eliminó el registro del usuario con id {user_id}"

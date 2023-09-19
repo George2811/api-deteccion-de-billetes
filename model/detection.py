@@ -4,7 +4,7 @@ from config.db import meta, engine
 
 detections = Table("detections", meta,
     Column("id", Integer, primary_key=True),
-    Column('user_id', Integer, nullable=False),
+    Column('user_id', String(200), nullable=False),
     Column('detection_date', Date, nullable=False),
     Column('currency_id', Integer, ForeignKey("currencies.id"), nullable=False),
     Column('classification', String(30), nullable=False),

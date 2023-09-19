@@ -4,7 +4,7 @@ from datetime import date
 
 class Detection(BaseModel):
     id: Optional[int] = None
-    user_id: int
+    user_id: str
     detection_date: date
     currency_id: int
     classification: str
