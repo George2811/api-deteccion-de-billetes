@@ -9,4 +9,4 @@ class Detection(BaseModel):
     currency_id: int
     classification: str
     percentage: float
-    image_id: int
+    image_url: str

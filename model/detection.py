@@ -9,7 +9,7 @@ detections = Table("detections", meta,
     Column('currency_id', Integer, ForeignKey("currencies.id"), nullable=False),
     Column('classification', String(30), nullable=False),
     Column('percentage', Float, nullable=False),
-    Column('image_id', Integer, nullable=False),
+    Column('image_url', String(250), nullable=False),
 )
 
 meta.create_all(bind=engine, tables=[detections])

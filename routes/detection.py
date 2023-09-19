@@ -22,7 +22,7 @@ async def save_detection(register: Detection):
                     'currency_id': register.currency_id,
                     'classification': register.classification,
                     'percentage': register.percentage,
-                    'image_id': register.image_id}
+                    'image_url': register.image_url}
     
     add_register = conn.execute(detections.insert().values(new_register))
     result = conn.execute(detections.select().where(detections.c.user_id == register.user_id, detections.c.id == add_register.lastrowid)).first()
