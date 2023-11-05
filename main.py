@@ -37,9 +37,9 @@ app.include_router(currency)
 app.include_router(detection)
 app.include_router(prediction)
 
-# if __name__ == "__main__":
-#     import uvicorn
-#     uvicorn.run(app, host="0.0.0.0", port=8000)
+if __name__ == "__main__":
+     import uvicorn
+     uvicorn.run(app, host="0.0.0.0", port=8000)
 
 # source dev-env/bin/activate
 # uvicorn main:app --reload
