@@ -26,7 +26,7 @@ def findRelevantKeypoints(img, desList):
       matchList.append(len(good))
   except:
     pass
-  print(matchList)
+  #print(matchList)
   return matchList
 
 # Devuleve el id de la imagen con mayor similitud y su porcentaje
